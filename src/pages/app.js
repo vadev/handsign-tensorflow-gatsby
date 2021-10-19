@@ -134,7 +134,8 @@ export default function App() {
                             .add('play');
                             document
                             .querySelector('.tutor-text')
-                            .innerText = "make a hand gesture based on letter shown below";
+                            .innerText = "Make a hand gesture based on letter shown below";
+                           
                     } else if (gamestate === 'played') {
                         document
                             .querySelector('#app-title')
@@ -188,11 +189,11 @@ export default function App() {
             <Container centerContent maxW="xl" height="100vh" pt="0" pb="0">
                 <VStack spacing={4} align="center">
                     <Box h="20px"></Box>
-                    <Heading as="h3" size="md" className="tutor-text" color="white" textAlign="center"></Heading>
+                    <Heading as="h3" size="md" className="tutor-text" color="black" textAlign="center"></Heading>
                     <Box h="20px"></Box>
                 </VStack>
 
-                <Heading as="h1" size="lg" id="app-title" color="white" textAlign="center">🧙‍♀️ Loading the Magic 🧙‍♂️</Heading>
+                <Heading as="h1" size="lg" id="app-title" color="white" textAlign="center">Loading ....</Heading>
 
                 <Box id="webcam-container">
                     {camState === 'on'
